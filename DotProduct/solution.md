@@ -4,7 +4,7 @@
 
 ### Problem Statement:
 
-###### Let A be a 10 dimensional array of 0 and 1, for each element probability of 1 is 1/2. Similarly let B be a 10 dimentional array of 0 and 1, for each element probability of 1 is 3/4. Find the probability that the dot product of A and B is odd.
+#### Let A be a 10 dimensional array of 0 and 1, for each element probability of 1 is 1/2. Similarly let B be a 10 dimentional array of 0 and 1, for each element probability of 1 is 3/4. Find the probability that the dot product of A and B is odd.
 
 ##### Method 1: Reccursion
 

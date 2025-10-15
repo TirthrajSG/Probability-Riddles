@@ -47,13 +47,10 @@ $\implies p_{10} = \frac{1}{2} - \frac{1}{2^{21}} \approx 0.4999995$
 $\text{P(Dot Product is odd)} = \text{P(Dot Product = 1)}+\text{P(Dot Product = 3)}+\dots+\text{P(Dot Product = 9)}$
 
 $$
-\begin{align*}
-
+\begin{aligned}
 \text{P(Dot Product = k)} &= \binom{10}{k} \times {\frac{3}{8}}^{k} \times {\frac{5}{8}}^{10-k} \\
-
-& = \binom{10}{k} \times \frac{3^k \times 5^{10-k}}{2^{30}}
-
-\end{align*}
+&= \binom{10}{k} \times \frac{3^k \times 5^{10-k}}{2^{30}}
+\end{aligned}
 $$
 
 <br>

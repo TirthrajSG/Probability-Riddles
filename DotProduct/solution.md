@@ -6,7 +6,7 @@
 
 #### Let A be a 10 dimensional array of 0 and 1, for each element probability of 1 is $\frac{1}{2}$. Similarly let B be a 10 dimentional array of 0 and 1, for each element probability of 1 is $\frac{3}{4}$. Find the probability that the dot product of A and B is odd.
 
-##### Method 1: Reccursion
+### Method 1: Reccursion
 
 We will approach this problem by recursion.
 
@@ -41,3 +41,41 @@ $\implies p_n = \frac{1}{2} - \frac{1}{2n+1}$
 For our question, put n = 10
 
 $\implies p_{10} = \frac{1}{2} - \frac{1}{2^{21}} \approx 0.4999995$
+
+### Method 2: Brute-Force
+
+$\text{P(Dot Product is odd)} = \text{P(Dot Product = 1)}+\text{P(Dot Product = 3)}+\dots+\text{P(Dot Product = 9)}$
+
+$$
+\begin{align*}
+
+\text{P(Dot Product = k)} &= \binom{10}{k} \times {\frac{3}{8}}^{k} \times {\frac{5}{8}}^{10-k} \\
+
+& = \binom{10}{k} \times \frac{3^k \times 5^{10-k}}{2^{30}}
+
+\end{align*}
+$$
+
+<br>
+
+$\text{P(Dot Product = 1)} = 58593750 \times \frac{1}{2^{30}}$
+
+$\text{P(Dot Product = 3)} = 253125000 \times \frac{1}{2^{30}}$
+
+$\text{P(Dot Product = 5)} = 191362500 \times \frac{1}{2^{30}}$
+
+$\text{P(Dot Product = 7)} = 32805000 \times \frac{1}{2^{30}}$
+
+$\text{P(Dot Product = 9)} = 984150 \times \frac{1}{2^{30}}$  
+
+<br>
+
+$$
+\begin{align*}
+\text{P(Dot Product is Odd)} & = (58593750 + 253125000 + 191362500 + 32805000 + 984150) \times \frac{1}{2^{30}} \\
+& = \frac{536870400}{2^{30}} \\
+& \approx 0.4999995
+
+\end{align*}
+$$
+

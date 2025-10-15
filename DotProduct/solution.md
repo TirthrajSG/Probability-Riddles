@@ -46,13 +46,15 @@ $\implies p_{10} = \frac{1}{2} - \frac{1}{2^{21}} \approx 0.4999995$
 
 $\text{P(Dot Product is odd)} = \text{P(Dot Product = 1)}+\text{P(Dot Product = 3)}+\dots+\text{P(Dot Product = 9)}$
 
-$$\begin{align*}
+$$
+\begin{align*}
 
 \text{P(Dot Product = k)} &= \binom{10}{k} \times {\frac{3}{8}}^{k} \times {\frac{5}{8}}^{10-k} \\
 
 & = \binom{10}{k} \times \frac{3^k \times 5^{10-k}}{2^{30}}
 
-\end{align*}$$
+\end{align*}
+$$
 
 <br>
 
@@ -68,10 +70,13 @@ $\text{P(Dot Product = 9)} = 984150 \times \frac{1}{2^{30}}$
 
 <br>
 
-$$\begin{align*}
-\text{P(Dot Product is Odd)} & = (58593750 + 253125000 + 191362500 + 32805000 + 984150) \times \frac{1}{2^{30}} \\
-& = \frac{536870400}{2^{30}} \\
-& \approx 0.4999995
+$$
+\begin{aligned}
+\text{P(Dot Product is Odd)} 
+&= (58593750 + 253125000 + 191362500 + 32805000 + 984150) \times \frac{1}{2^{30}} \\
+&= \frac{536870400}{2^{30}} \\
+&\approx 0.4999995
+\end{aligned}
+$$
 
-\end{align*}$$
 

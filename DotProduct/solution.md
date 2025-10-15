@@ -14,30 +14,30 @@ Assume we have calculated products till n<sup>th</sup> position, then the (n+1)<
 
 Let probability that sum of products till n is odd is $p_n$, the recurssive relation: 
 
-$ p_{n} = \frac{3}{8} \times (1 - p_{n-1}) + \frac{5}{8} \times p_{n-1} \text{ and, } p_1 = \frac{3}{8}$
+$p_{n} = \frac{3}{8} \times (1 - p_{n-1}) + \frac{5}{8} \times p_{n-1} \text{ and, } p_1 = \frac{3}{8}$
 
-$ \implies  p_n = \frac{1}{4} \times p_{n-1} + \frac{3}{8}$
+$\implies  p_n = \frac{1}{4} \times p_{n-1} + \frac{3}{8}$
 
-$ \implies p_n = \frac{1}{4^2} \times p_{n-2} + \frac{1}{4} \times \frac{3}{8} + \frac{3}{8} $
+$\implies p_n = \frac{1}{4^2} \times p_{n-2} + \frac{1}{4} \times \frac{3}{8} + \frac{3}{8}$
 
-$ \implies p_n = \frac{1}{4^3} \times p_{n-3} + \frac{1}{4^2} \times \frac{3}{8} + \frac{1}{4} \times \frac{3}{8} + \frac{3}{8} $
+$\implies p_n = \frac{1}{4^3} \times p_{n-3} + \frac{1}{4^2} \times \frac{3}{8} + \frac{1}{4} \times \frac{3}{8} + \frac{3}{8}$
 
-$ \implies p_n = \frac{1}{4^k} \times p_{n-k} + \frac{3}{8} \sum_{i=1}^k \frac{1}{4^k} $
+$\implies p_n = \frac{1}{4^k} \times p_{n-k} + \frac{3}{8} \sum_{i=1}^k \frac{1}{4^k}$
 
 Put $k=n-1$
 
-$ \implies p_n = \frac{1}{4^{n-1}} \times p_{1} + \frac{3}{8} \times \frac{1(1 - \frac{1}{4^{n-1}})}{1 - \frac{1}{4}}$
+$\implies p_n = \frac{1}{4^{n-1}} \times p_{1} + \frac{3}{8} \times \frac{1(1 - \frac{1}{4^{n-1}})}{1 - \frac{1}{4}}$
 
-$ \implies p_n = \frac{1}{2^{2n-2}} \times \frac{3}{8} + \frac{3}{8} \times \frac{1 - \frac{1}{4^{n-1}}}{\frac{3}{4}}$
+$\implies p_n = \frac{1}{2^{2n-2}} \times \frac{3}{8} + \frac{3}{8} \times \frac{1 - \frac{1}{4^{n-1}}}{\frac{3}{4}}$
 
-$ \implies p_n = \frac{3}{2^{2n+1}} + \frac{1}{2} \times (1 - \frac{1}{4^{n-1}})$
+$\implies p_n = \frac{3}{2^{2n+1}} + \frac{1}{2} \times (1 - \frac{1}{4^{n-1}})$
 
-$ \implies p_n = \frac{1}{2} + \frac{3}{2^{2n+1}} - \frac{1}{2n-1} $
+$\implies p_n = \frac{1}{2} + \frac{3}{2^{2n+1}} - \frac{1}{2n-1}$
 
-$ \implies p_n = \frac{1}{2} + \frac{3}{2^{2n+1}} - \frac{4}{2n+1} $
+$\implies p_n = \frac{1}{2} + \frac{3}{2^{2n+1}} - \frac{4}{2n+1}$
 
-$ \implies p_n = \frac{1}{2} - \frac{1}{2n+1} $
+$\implies p_n = \frac{1}{2} - \frac{1}{2n+1}$
 
 For our question, put n = 10
 
-$ \implies p_{10} = \frac{1}{2} - \frac{1}{2^{21}} \approx 0.4999995 $
+$\implies p_{10} = \frac{1}{2} - \frac{1}{2^{21}} \approx 0.4999995$

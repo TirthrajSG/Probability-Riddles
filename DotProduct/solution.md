@@ -42,7 +42,26 @@ For our question, put n = 10
 
 $\implies p_{10} = \frac{1}{2} - \frac{1}{2^{21}} \approx 0.4999995$
 
-### Method 2: Brute-Force
+### Method 2: Simplification
+
+$\text{P(Dot Product is odd)} = \text{P(Dot Product = 1)}+\text{P(Dot Product = 3)}+\dots+\text{P(Dot Product = 9)}$
+
+$$
+\begin{aligned}
+\text{P(Dot Product = k)} &= \binom{10}{k} \times  {\left(\frac{3}{8} \right)}^{k} \times {\left(\frac{5}{8}\right)}^{10-k} \\
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\text{P(Dot Product is Odd)} &= \sum_{k=1}^{\text{Odd numbers till 10}} \binom{10}{k} \times  {\left(\frac{3}{8} \right)}^{k} \times {\left(\frac{5}{8}\right)}^{10-k} \\
+&= \left(\left(\frac{3}{8} + \frac{5}{8}\right)^{10} - \left(\frac{5}{8} - \frac{3}{8}\right)^{10}\right) \times \frac{1}{2} \\
+&= \frac{1}{2} - \frac{1}{2^{21}} \\
+&\approx 0.4999995
+\end{aligned}
+$$
+
+### Method 3: Brute-Force
 
 $\text{P(Dot Product is odd)} = \text{P(Dot Product = 1)}+\text{P(Dot Product = 3)}+\dots+\text{P(Dot Product = 9)}$
 
@@ -75,5 +94,3 @@ $$
 &\approx 0.4999995
 \end{aligned}
 $$
-
-

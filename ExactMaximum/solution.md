@@ -38,9 +38,11 @@ $\implies \text{P(max of 8 rolls = 5)} = \frac{5^8-4^8}{6^8} \approx 0.1935496$
 
 ### Method 2: Combinatorics
 
-$\begin{aligned}
+$$
+\begin{aligned}
 \text{P(max = 5)} &= \text{P(max }\le\text{ 5)} - \text{P(max }\le\text{ 4)} \\
 &= \frac{5^8}{6^8} - \frac{4^8}{6^8} \\
 &= \frac{5^8 - 4^8}{6^8} \\
 &\approx 0.1935496
-\end{aligned}$
+\end{aligned}
+$$

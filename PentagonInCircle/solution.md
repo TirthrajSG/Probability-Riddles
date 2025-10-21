@@ -1,4 +1,4 @@
-# Quant Interview Question: Exact Maximum
+# Quant Interview Question: Pentagon In Circle
 
 ## Asked by Citadel
 

@@ -1,7 +1,5 @@
 # Quant Interview Question: Exact Maximum
 
-## Asked by Citadel
-
 ### Problem Statement:
 
 #### Let $S=\{1,2,3,…,10\}$. Two subsets $𝑋$ and $𝑌$ are chosen independently and uniformly at random from the power set of $𝑆$, i.e. each of the $2^10$ subsets of $𝑆$ is equally likely to be chosen for both $𝑋$ and $𝑌$. Determine the probability that $𝑋$ is a subset of $𝑌$ that is, find $P(X⊆Y)$.

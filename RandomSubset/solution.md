@@ -1,4 +1,4 @@
-# Quant Interview Question: Exact Maximum
+# Quant Interview Question: Random Subset
 
 ### Problem Statement:
 

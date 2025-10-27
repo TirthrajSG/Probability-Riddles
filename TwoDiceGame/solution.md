@@ -7,9 +7,10 @@
 ### Solution:
 
 $\text{P(A wins in his turn)} = \frac{|\{(5,1), (4,2), (3,3), (2,4), (1,5)\}|}{36} = \frac{5}{36}$
+
 $\text{P(B wins in his turn)} = \frac{|\{(6,1), (5,2), (4,3), (3,4), (2,5), (1,6)\}|}{36} = \frac{6}{36} = \frac{1}{6}$
 
-$\text{P(A wins) = P(A wins in first turn) + P(A wins in second turn | A and B loses in first turn) + P(A wins in third turn | A and B loses in first and second turn)} \dots$
+![](imgs/img1.png)
 
 $\text{P(A wins)} = \frac{5}{36} + \frac{31}{36}\times\frac{5}{6}\times\frac{3}{36} + \left(\frac{31}{36}\right)^{2}\times\left(\frac{5}{6}\right)^{2}\times\frac{3}{36} + \dots$
 
